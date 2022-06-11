@@ -26,13 +26,7 @@ router.get('/', (req, res) => {
       as: 'product_tags'
     }
   })
-  .then(dbProductData => {
-    if (!dbProductData) {
-      res.status(404).json({ message: 'No product found with this id!'});
-      return;
-    }
-    res.json(dbProductData);
-  })
+  .then(dbProductData => res.json(dbProductData))
   .catch(err => {
     console.log(err);
     res.status(500).json(err)
@@ -65,7 +59,12 @@ router.get('/:id', (req, res) => {
       as: 'product_tags'
     }  
   })
-  .then(dbProductData => res.json(dbProductData))
+  .then(dbProductData => {
+    if (!dbProductData) {
+      res.status(404).json({ message: 'No product found with this id!'});
+    }
+    res.json(dbProductData);
+  })
   .catch(err => {
     console.log(err);
     res.status(500).json(err)

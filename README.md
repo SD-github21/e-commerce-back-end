@@ -16,7 +16,7 @@ The purpose of this project was to build a back end for an e-commerce site and t
 [Contributing](#contributing)<br>
 [Tests](#tests)<br>
 [Built With](#built-with)<br>
-[Walkthrough Video](#video-of-employee-tracker)<br>
+[Walkthrough Video](#video-of-e-commerce-back-end)<br>
 
 <br>
 
@@ -41,12 +41,13 @@ THEN I am able to successfully create, update, and delete data in my database <b
 <br>
 
 ### **Installation**
-(1) Click [here](https://nodejs.org/en/) to install Node.js on your local machine if you haven't already done so. Choose the latest LTS version for the most recent stable release.<br> 
-(2) Download MySQL onto your machine if you haven't already done. Use the following installation for detailed instructions on how to do this:
+(1) Click [here](https://nodejs.org/en/) to install Node.js on your local machine if you haven't already done so. Choose the latest LTS version for the most recent stable release.
+<br><br> 
+(2) Download MySQL onto your machine if you haven't already done. Use the following installation for detailed instructions on how to do this:<br>
 https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide
-<br>
-(3) Clone this repository on your local machine.<br>
-(4) Navigate to the repository folder.<br>
+<br><br>
+(3) Clone this repository on your local machine.<br><br>
+(4) Navigate to the repository folder.<br><br>
 (5) Type the following command in the command line to download all required packages/modules.dependencies:<br>
 
     npm install
@@ -56,28 +57,29 @@ https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide
 ### **Usage**
 (1) In order to connect to a MySQL database, you must create a .env file that contains the following information:
 
-DB_NAME = 'ecommerce_db'
-DB_USER = 'yourusername'
-DB_PW = 'yourpassword'
+    DB_NAME = 'ecommerce_db'
+    DB_USER = 'yourusername'
+    DB_PW = 'yourpassword'
 
 (2) Enter the following in the command line:
 
-mysql -u root -p 
+    mysql -u root -p 
 
 This will prompt you to enter your MySQL password. 
-
+<br>
+<br>
 (3) After you enter your password, you will see the MySQL command line. Enter the following command in the command line:
 
-source db/schema;
+    source db/schema;
 
 You should see the following lines printed in the command line indicating that the database has been successfully created:
 
-Query OK, 4 rows affected (0.17 sec)
-Query OK, 1 row affected (0.01 sec)
+    Query OK, 4 rows affected (0.17 sec)
+    Query OK, 1 row affected (0.01 sec)
 
 (4) Type "quit" in the MySQL command line. Then type the following in the command line to seed the SQL database:
 
-node seeds/index.js
+    node seeds/index.js
 
 You should see numerous SQL statements and then confirmation of data having been seeded:
 
@@ -85,23 +87,24 @@ You should see numerous SQL statements and then confirmation of data having been
 
 (5) Type the following command:
 
-npm start
+    npm start
 
 OR
 
-node server.js
+    node server.js
 
-You should see the following image in your command line indicating that the server is started and the Sequelize models are synced to the MySQL database.
+You should see the following image in your command line indicating that the server is started and the Sequelize models are synced to the MySQL database.<br>
+<br>
 
-(6) You can open API GET routes for categories, products, or tags in Insomnia and view the data for each route in a formatted JSON. You can also test API POST, PUT, and DELETE routes in Insomnia to create, update, and delete data in the database. Visit the [Walkthrough Video](#video-of-employee-tracker) to see all routes in action in Insomnia. Below is a sample picture of the GET route for all categories in Insomnia:
+(6) You can open API GET routes for categories, products, or tags in Insomnia and view the data for each route in a formatted JSON. You can also test API POST, PUT, and DELETE routes in Insomnia to create, update, and delete data in the database. Visit the [Walkthrough Video](#video-of-e-commerce-back-end) to see all routes in action in Insomnia. Below is a sample picture of the GET route for all categories in Insomnia:
 
 ![alt text](images/sample-get-all-categories-request.png)
 
 <br>
 
 ### **License**
-  This project is covered under the following license: ISC<br>
-  https://opensource.org/licenses/ISC
+This project is covered under the following license: ISC<br>
+https://opensource.org/licenses/ISC
 
 
 <br>

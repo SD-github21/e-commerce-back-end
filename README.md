@@ -3,7 +3,7 @@
 # **E-Commerce Back End**
 
 ## **Description**
-The purpose of this project was to build a back end for an e-commerce site and to configure a working Express.js API to use Sequelize to interact with a MySQL database. 
+The purpose of this project was to build a back end for an e-commerce site and to configure a working Express.js API to use Sequelize to interact with a MySQL database in order to perform CRUD operations. 
 
 <br>
 

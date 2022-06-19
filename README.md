@@ -43,7 +43,7 @@ THEN I am able to successfully create, update, and delete data in my database <b
 ### **Installation**
 (1) Click [here](https://nodejs.org/en/) to install Node.js on your local machine if you haven't already done so. Choose the latest LTS version for the most recent stable release.
 <br><br> 
-(2) Download MySQL onto your machine if you haven't already done. Use the following installation for detailed instructions on how to do this:<br>
+(2) Download MySQL onto your machine if you haven't already done so. Use the following installation guide for detailed instructions on how to do this:<br>
 https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide
 <br><br>
 (3) Clone this repository on your local machine.<br><br>

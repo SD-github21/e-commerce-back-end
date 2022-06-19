@@ -93,7 +93,10 @@ OR
 
     node server.js
 
-You should see the following image in your command line indicating that the server is started and the Sequelize models are synced to the MySQL database.<br>
+You should see the following image in your command line indicating that the server is started and the Sequelize models are synced to the MySQL database:
+
+![alt text](images/synced-models.png)
+<br>
 <br>
 
 (6) You can open API GET routes for categories, products, or tags in Insomnia and view the data for each route in a formatted JSON. You can also test API POST, PUT, and DELETE routes in Insomnia to create, update, and delete data in the database. Visit the [Walkthrough Video](#video-of-e-commerce-back-end) to see all routes in action in Insomnia. Below is a sample picture of the GET route for all categories in Insomnia:
